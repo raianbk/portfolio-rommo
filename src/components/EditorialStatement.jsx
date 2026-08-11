@@ -20,7 +20,7 @@ export default function EditorialStatement() {
   ];
 
   return (
-    <section className="py-28 md:py-40 bg-[#0A0A0A] border-y border-white/5 relative overflow-hidden">
+    <section className="py-28 md:py-40 bg-[#080808]/60 backdrop-blur-[2px] border-y border-white/5 relative overflow-hidden z-10">
       {/* Background Accent Lines */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full border-x border-white/[0.03] pointer-events-none" />
 

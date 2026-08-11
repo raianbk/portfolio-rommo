@@ -9,7 +9,7 @@ export default function Footer({ onCursorChange }) {
   };
 
   return (
-    <footer className="bg-[#050505] border-t border-white/10 py-12 md:py-16 text-neutral-400 font-mono text-xs">
+    <footer className="bg-[#050505]/70 backdrop-blur-md border-t border-white/10 py-12 md:py-16 text-neutral-400 font-mono text-xs relative z-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         {/* Left: Editor Brand Info */}
         <div>

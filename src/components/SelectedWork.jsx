@@ -12,7 +12,7 @@ export default function SelectedWork({ onSelectProject, onCursorChange }) {
   const p4 = PROJECTS[3];
 
   return (
-    <section id="selected-work" className="py-28 md:py-36 bg-[#080808] relative">
+    <section id="selected-work" className="py-28 md:py-36 bg-transparent relative z-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 border-b border-white/10 pb-8">

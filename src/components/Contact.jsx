@@ -15,7 +15,7 @@ export default function Contact({ onCursorChange }) {
   };
 
   return (
-    <section id="contact" className="py-32 md:py-44 bg-[#0A0A0A] border-t border-white/10 relative overflow-hidden">
+    <section id="contact" className="py-32 md:py-44 bg-transparent border-t border-white/10 relative overflow-hidden z-10">
       {/* Subtle Background Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-white/[0.02] rounded-full blur-3xl pointer-events-none" />
 

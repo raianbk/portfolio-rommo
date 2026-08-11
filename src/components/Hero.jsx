@@ -29,10 +29,10 @@ export default function Hero({ onCursorChange }) {
   return (
     <section
       id="hero"
-      className="relative min-h-screen pt-32 pb-20 flex flex-col justify-between overflow-hidden bg-[#080808]"
+      className="relative min-h-screen pt-32 pb-20 flex flex-col justify-between overflow-hidden bg-transparent z-10"
     >
-      {/* Background Ambient Glow & Grid Lines */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-900/40 via-[#080808] to-[#080808] pointer-events-none" />
+      {/* Background Ambient Glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-900/30 via-transparent to-transparent pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
       {/* Main Content Container */}
