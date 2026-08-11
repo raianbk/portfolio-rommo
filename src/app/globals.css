@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #080808;
+    --bg-secondary: #111111;
+    --bg-card: #151515;
+    --text-primary: #F2F2F2;
+    --text-secondary: #8A8A8A;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  body {
+    background-color: #080808;
+    color: #F2F2F2;
+    overflow-x: hidden;
+    selection-background-color: #ffffff;
+    selection-color: #000000;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+/* Kinetic Marquee Keyframes */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Viewfinder HUD Styling */
+.viewfinder-corner {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-color: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+}
+
+/* Grain texture overlay */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+}
