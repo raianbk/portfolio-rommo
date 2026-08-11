@@ -37,8 +37,7 @@ export default function AnimatedBackground() {
       speedY: (Math.random() - 0.5) * 0.4,
       alpha: Math.random() * 0.5 + 0.3,
       pulseSpeed: Math.random() * 0.03 + 0.01,
-      // Subtle cyan/blue/amber studio palette
-      color: Math.random() > 0.4 ? "255, 255, 255" : Math.random() > 0.5 ? "99, 102, 241" : "245, 158, 11",
+      color: "255, 255, 255",
     }));
 
     const draw = () => {
